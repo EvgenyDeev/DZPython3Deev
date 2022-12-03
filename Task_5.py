@@ -2,17 +2,17 @@
 n = int(input('Введите число: '))
 
 def fibonacci(n):
-    fibo_nums = []
+    fib_numbers = []
     a, b = 1, 1
     for i in range(n-1):
-        fibo_nums.append(a)
+        fib_numbers.append(a)
         a, b = b, a + b
     a, b = 0, 1
     for i in range (n):
-        fibo_nums.insert(0, a)
+        fib_numbers.insert(0, a)
         a, b = b, a - b
-    return fibo_nums
+    return fib_numbers
 
-fibo_nums = fibonacci(n)
+fib_numbers = fibonacci(n)
 print(fibonacci(n))
-print(fibo_nums.index(0))
+print(fib_numbers.index(0))
